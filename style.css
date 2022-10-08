@@ -1,0 +1,123 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css");
+
+html {
+  font-family: "pretendard", sans-serif;
+  font-size: 16px;
+  word-break: keep-all;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  max-width: 720px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+
+p {
+  font-weight: 400;
+  margin: 0;
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 3rem 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #5abfb7;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+div[role="contentinfo"] {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem 0;
+}
+
+.border__width {
+  width: 100%;
+  height: 1px;
+  background-color: gray;
+}
+
+.contect__text {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .contect__text h3 {
+  margin: 0.5rem 0;
+} */
+
+.contect__text a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.contect__text p {
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+}
+
+.introduce p {
+  font-size: 1.3rem;
+  line-height: 1.3;
+  margin: 0.5rem 0;
+}
+
+.skill__rowBox {
+  display: flex;
+  flex-direction: row;
+}
+
+.skill__rowBox__skillName {
+  min-width: 30%;
+}
+
+.skill__rowBox__skillContext {
+  min-width: 70%;
+  height: 100%;
+}
+
+.skill__rowBox__skillContext > ul {
+  margin: 1rem 0;
+}
+
+.skill__rowBox__skillContext > ul > li {
+  line-height: 1.5;
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 12px;
+  }
+  body {
+    margin: auto 2rem;
+  }
+}

@@ -15,7 +15,7 @@
 <body>
   <div class="container">
     <header role="contentinfo" class="header">
-      <h1 tabindex="0">누구든 기술에 소외받지 않는<br>세상을 만들어가고픈
+      <h1 tabindex="0">누구든 기술에 소외받지 않는 세상을 만들어가고픈
         <br>신도윤입니다.
       </h1>
     </header>
@@ -169,27 +169,30 @@
                 JavaScript, React, Redux Toolkit, Redux thunk, Axios, Sentry, styled-components, AWS (S3, CloudFront,
                 Route 53)
               </p>
-
-              <label>
-                What I Do / Frontend Engineer
-              </label>
-              <ul>
-                <li tabindex="0">프로젝트 내 온보딩, 메인, 마이 페이지 등 기본 서비스 페이지 구현</li>
-                <li tabindex="0">Redux의 잦은 BolierPlate 코드들을 정리하고, Axios의 instance를 이용해 thunk를 고치지 않는 방향으로 리팩토링 진행</li>
-                <li tabindex="0">갱신되지 않는 instance 객체를 Axios의 intercepter를 활용해 클라-서버 간의 원활한 token 인증/인가 방식 구현</li>
-                <li tabindex="0">AWS의 S3로 웹 페이지를 배포, CloudFront와 Route 53을 이용해 SSL 인증서를 받은 https 사이트 적용</li>
-                <li tabindex="0">피드백 내용을 통해 제보된 75개의 버그들 중 72개의 버그 수정 및 처리 진행 (중복 제보, 수정 불가, 미이슈 사항 포함)</li>
-                <li tabindex="0">전맹 사용자를 접근성을 고려해 시맨틱 태그와 alt, aria attribute를 배치하여 스크린 리더 읽기 기능 적용</li>
-              </ul>
-              <label>
-                What I Do / Team Leader
-              </label>
-              <ul>
-                <li tabindex="0">JIRA를 이용해 6주 일정을 스프린트로 분리, 팀원들에게 일감 배분 및 개발 사항 관리</li>
-                <li tabindex="0">피드백으로 전달받은 버그들을 Github Project와 issues를 통해 리스트로 등록, 버그 트래킹을 진행</li>
-                <li tabindex="0">이슈 모니터링 시스템인 Sentry를 배치해 심리 테스트 페이지 공유 기능 사용 중 일부 브라우저에서 WEB Share API를 사용하지 못하는 문제를
-                  발견하고, 특정 플랫폼에선 ClipBoard API를 적용해 공유 문제를 해결</li>
-              </ul>
+              <div class="project__activity">
+                <label aria-label="프론트엔드 엔지니어 활동 내역">
+                  What I Do / Frontend Engineer
+                </label>
+                <ul>
+                  <li tabindex="0">프로젝트 내 온보딩, 메인, 마이 페이지 등 기본 서비스 페이지 구현</li>
+                  <li tabindex="0">Redux의 잦은 BolierPlate 코드들을 정리하고, Axios의 instance를 이용해 thunk를 고치지 않는 방향으로 리팩토링 진행</li>
+                  <li tabindex="0">갱신되지 않는 instance 객체를 Axios의 intercepter를 활용해 클라-서버 간의 원활한 token 인증/인가 방식 구현</li>
+                  <li tabindex="0">AWS의 S3로 웹 페이지를 배포, CloudFront와 Route 53을 이용해 SSL 인증서를 받은 https 사이트 적용</li>
+                  <li tabindex="0">피드백 내용을 통해 제보된 75개의 버그들 중 72개의 버그 수정 및 처리 진행 (중복 제보, 수정 불가, 미이슈 사항 포함)</li>
+                  <li tabindex="0">전맹 사용자를 접근성을 고려해 시맨틱 태그와 alt, aria attribute를 배치하여 스크린 리더 읽기 기능 적용</li>
+                </ul>
+              </div>
+              <div class="project__activity__last">
+                <label aria-label="팀 리더 활동 내역">
+                  What I Do / Team Leader
+                </label>
+                <ul>
+                  <li tabindex="0">JIRA를 이용해 6주 일정을 스프린트로 분리, 팀원들에게 일감 배분 및 개발 사항 관리</li>
+                  <li tabindex="0">피드백으로 전달받은 버그들을 Github Project와 issues를 통해 리스트로 등록, 버그 트래킹을 진행</li>
+                  <li tabindex="0">이슈 모니터링 시스템인 Sentry를 배치해 심리 테스트 페이지 공유 기능 사용 중 일부 브라우저에서 WEB Share API를 사용하지 못하는 문제를
+                    발견하고, 특정 플랫폼에선 ClipBoard API를 적용해 공유 문제를 해결</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

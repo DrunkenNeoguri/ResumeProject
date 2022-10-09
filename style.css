@@ -1,5 +1,7 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css");
 
+/* base & common */
+
 html {
   font-family: "pretendard", sans-serif;
   font-size: 16px;
@@ -50,8 +52,17 @@ h4 {
   font-size: 1.5rem;
 }
 
+h5 {
+  font-size: 1rem;
+}
+
 p {
   font-size: 1rem;
+}
+
+a {
+  color: gray;
+  text-decoration: underline;
 }
 
 div[role="contentinfo"] {
@@ -62,22 +73,15 @@ div[role="contentinfo"] {
 
 .border__width {
   width: 100%;
-  height: 1px;
-  background-color: gray;
+  height: 0px;
+  border-bottom: 1px solid gray;
 }
+
+/* contect */
 
 .contect__text {
   display: flex;
   flex-direction: column;
-}
-
-/* .contect__text h3 {
-  margin: 0.5rem 0;
-} */
-
-.contect__text a {
-  color: #000000;
-  text-decoration: none;
 }
 
 .contect__text p {
@@ -91,26 +95,55 @@ div[role="contentinfo"] {
   margin: 0.5rem 0;
 }
 
-.skill__rowBox {
+/* Skill */
+
+.rowbox {
   display: flex;
   flex-direction: row;
+  margin: 1rem 0;
 }
 
-.skill__rowBox__skillName {
+.rowbox__name {
   min-width: 30%;
 }
 
-.skill__rowBox__skillContext {
+.rowbox__context {
   min-width: 70%;
   height: 100%;
 }
 
-.skill__rowBox__skillContext > ul {
+.rowbox__context > ul {
   margin: 1rem 0;
 }
 
-.skill__rowBox__skillContext > ul > li {
+.rowbox__context > ul > li {
   line-height: 1.5;
+}
+
+.rowbox__context > ul > li::marker {
+  color: #5abfb7;
+}
+
+.rowbox__context label {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* Project */
+
+.rowbox__name {
+  font-size: 1.2rem;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.project__box h4 {
+  margin: 1rem 0;
+}
+
+.project__box p {
+  line-height: 1.3;
+  margin: 1rem 0;
 }
 
 @media (max-width: 720px) {

@@ -6,6 +6,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/19b83ccea6.js" crossorigin="anonymous"></script>
   <link rel="icon"
     href="https://raw.githubusercontent.com/hanghae99-s8realweek-E3/frontend/main/public/mimicfavicon.ico" />
   <link rel="stylesheet" href="style.css">
@@ -27,19 +28,26 @@
         <div class="contect__image">
           <img src="https://github.com/DrunkenNeoguri/ResumeProject/blob/master/profile/profile.jpg?raw=true">
         </div>
-        <div class="contect__text">
-          <h3 tabindex="0" aria-label="연락망">
-            Contact
-          </h3>
-          <p>이메일: <a href="mailto:developneoguri@gmail.com"
-              aria-label="탭하면 이메일 수신창이 출력됩니다.">developneoguri@gmail.com</a></p>
-          <p>연락처: <a href="tel:010-7552-0121" aria-label="탭하면 전화번호가 입력됩니다.">010-7552-0121</a></p>
-          <p>링크드인: <a href="https://www.linkedin.com/in/developneoguri/"
-              aria-label="클릭 시, 제 링크드인 페이지로 이동합니다.">https://www.linkedin.com/in/developneoguri/</a>
-          </p>
-          <p>깃허브: <a href="https://github.com/DrunkenNeoguri"
-              aria-label="클릭 시, 제 깃허브 페이지로 이동합니다.">https://github.com/DrunkenNeoguri</a>
-          </p>
+        <div style="display:flex; flex-direction:column">
+          <div class="contect__text">
+            <h3 tabindex="0" aria-label="연락망">
+              Contact
+            </h3>
+            <p>이메일: <a href="mailto:developneoguri@gmail.com"
+                aria-label="탭하면 이메일 수신창이 출력됩니다.">developneoguri@gmail.com</a></p>
+            <p>연락처: <a href="tel:010-7552-0121" aria-label="탭하면 전화번호가 입력됩니다.">010-7552-0121</a></p>
+          </div>
+          <div class="contect__text">
+            <h3 tabindex="0" aria-label="채널" style="margin:1.5rem 0 0 0">
+              Channel
+            </h3>
+            <p><a href="https://www.linkedin.com/in/developneoguri/" aria-label="클릭 시, 제 링크드인 페이지로 이동합니다."
+                style="text-decoration:none"><i class="fa-brands fa-linkedin"></i> 링크드인</a>
+            </p>
+            <p><a href="https://github.com/DrunkenNeoguri" aria-label="클릭 시, 제 깃허브 페이지로 이동합니다."
+                style="text-decoration:none"><i class="fa-brands fa-github"></i> 깃허브</a>
+            </p>
+          </div>
         </div>
       </div>
 
@@ -51,7 +59,7 @@
         </h3>
         <p tabindex="0">게임업계에서 4년 동안 게임 콘텐츠 기획자로 활동하다 웹 개발에 흥미를 느껴 프론트엔드 개발자로 전향했습니다.</p>
         <p tabindex="0">a11y와 편안한 UX를 적용해 페이지 이용의 불편함을 최소화하는 방법을 연구하고 있습니다.</p>
-        <p tabindex="0">개발은 혼자가 아닌 모두와 함께하는 작업이라고 생각하며, 개발 중에 발생한 트러블에 대응하는 과정 속에서 소통을 통해 모두가 발전하고 결과로 이어지는 것을 추구합니다.
+        <p tabindex="0">개발은 혼자가 아닌 모두와 함께하는 작업이라고 생각하며, 트러블에 대응하는 과정 속에서 소통을 통해 모두가 발전하고 결과로 이어지는 것을 추구합니다.
         </p>
       </div>
 
@@ -112,8 +120,6 @@
 
           <div class="rowbox__context">
             <ul>
-              <li tabindex="0">S3를 통해 정적 웹 페이지를 배포하고, CloudFront를 활용해 CDN을 구축해 콘텐츠를 배포할 수 있습니다.</li>
-              <li tabindex="0">Route 53을 활용해 도메인을 등록하고 레코드를 발급해 SSL 인증서와 함께 https 환경을 연동할 수 있습니다.</li>
               <li tabindex="0">JIRA Software, Trello를 통한 협업 관리 툴을 활용해 프로젝트를 관리할 수 있습니다.</li>
               <li tabindex="0">Mantis, Redmine, Github Project & issue를 활용해 버그 트래킹을 관리할 수 있습니다.</li>
               <li tabindex="0">Sentry를 통해 에러 사항을 모니터링할 수 있습니다.</li>
@@ -122,95 +128,110 @@
         </div>
       </div>
 
-      <div class="border__width"></div>
+      <div class="rowbox">
+        <h4 class="rowbox__name" tabindex="0" aria-label="기타">
+          ETC
+        </h4>
 
-      <div role="contentinfo" class="project">
-        <h3 tabindex="0" aria-label="프로젝트">
-          Project
-        </h3>
-        <div class="project__box">
-          <h4 class="project__box__projectName">
-            <a href="https://github.com/DrunkenNeoguri/todaysmimic"
-              aria-label="당신의 하루, 그리고 나의 하루 MIMIC, 누르면 깃허브 레포지토리로 이동합니다.">당신의 하루, 그리고 나의 하루 - MIMIC</a>
-          </h4>
-          <p>
-            하루 한 번, 내 일과 중 하나를 타인이 체험하도록 공유하거나
-            타인의 일과 중 하나를 오늘의 내 하루에 포함해 체험해봄으로서
-            다른 사람의 삶을 체험해보는 TODO 형식의 미션형 SNS입니다.
-          </p>
+        <div class="rowbox__context">
+          <ul>
+            <li tabindex="0">S3를 통해 정적 웹 페이지를 배포하고, CloudFront를 활용해 CDN을 구축해 콘텐츠를 배포할 수 있습니다.</li>
+            <li tabindex="0">Route 53을 활용해 도메인을 등록하고 레코드를 발급해 SSL 인증서와 함께 https 환경을 연동할 수 있습니다.</li>
+          </ul>
+        </div>
+      </div>
+  </div>
 
-          <p>
-            전체 이용자 약 1,200명, 가입자 약 200명, 총 136개의 피드백을 수집했습니다.
-          </p>
+  <div class="border__width"></div>
 
-          <div class="rowbox" style="margin-top: 3rem;">
-            <label class="rowbox__name" tabindex="0">
-              Frontend Engineer<br>
-              Team Leader<br>
-              <p>(2022.08.26~2022.10.07)</p>
+  <div role="contentinfo" class="project">
+    <h3 tabindex="0" aria-label="프로젝트">
+      Project
+    </h3>
+    <div class="project__box">
+      <h4 class="project__box__projectName">
+        당신의 하루, 그리고 나의 하루 - MIMIC　
+        <a href="https://github.com/DrunkenNeoguri/todaysmimic"
+          aria-label="당신의 하루, 그리고 나의 하루 MIMIC, 누르면 깃허브 레포지토리로 이동합니다."><i class="fa-brands fa-github"></i></a>
+      </h4>
+      <p>
+        하루 한 번, 내 일과 중 하나를 타인이 체험하도록 공유하거나
+        타인의 일과 중 하나를 오늘의 내 하루에 포함해 체험해봄으로서
+        다른 사람의 삶을 체험해보는 TODO 형식의 미션형 SNS입니다.
+      </p>
+
+      <p>
+        전체 이용자 약 1,200명, 가입자 약 200명, 총 136개의 피드백 수집 및 제보된 75개 버그 중 72개 수정 완료
+      </p>
+
+      <div class="rowbox" style="margin-top: 3rem;">
+        <label class="rowbox__name" tabindex="0">
+          Frontend Engineer<br>
+          Team Leader<br>
+          <p>(2022.08.26~2022.10.07)</p>
+        </label>
+
+        <div class="rowbox__context">
+          <div class="project__techStack">
+            <label>
+              Tech Stack
             </label>
+            <p class="rowbox__context__stack">
+              JavaScript, React, Redux Toolkit, Redux thunk, Axios, Sentry, styled-components, AWS (S3, CloudFront,
+              Route 53)
+            </p>
+          </div>
 
-            <div class="rowbox__context">
-              <div class="project__techStack">
-                <label>
-                  Tech Stack
-                </label>
-                <p class="rowbox__context__stack">
-                  JavaScript, React, Redux Toolkit, Redux thunk, Axios, Sentry, styled-components, AWS (S3, CloudFront,
-                  Route 53)
-                </p>
-              </div>
+          <div class="project__activity">
+            <label aria-label="프론트엔드 엔지니어 활동 내역">
+              What I Do / Frontend Engineer
+            </label>
+            <ul>
+              <li tabindex="0">프로젝트 내 온보딩, 메인, 마이 페이지 등 기본 서비스 페이지 구현</li>
+              <li tabindex="0">Redux의 잦은 BolierPlate 코드들을 정리하고, Axios의 instance를 이용해 thunk를 고치지 않는 방향으로 리팩토링 진행</li>
+              <li tabindex="0">갱신되지 않는 instance 객체를 Axios의 intercepter를 활용해 클라-서버 간의 원활한 token 인증/인가 방식 구현</li>
+              <li tabindex="0">AWS의 S3로 웹 페이지를 배포, CloudFront와 Route 53을 이용해 SSL 인증서를 받은 https 사이트 적용</li>
+              <li tabindex="0">모달창 외부 영역 클릭 시 닫기, mbti 선택 페이지 내 필터 초기화 버튼 등 사용자 의견을 수렴 후 불편한 UI, UX 수정 사항 반영</li>
+              <li tabindex="0">전맹 사용자를 접근성을 고려해 시맨틱 태그와 alt, aria attribute를 배치하여 스크린 리더 읽기 기능 적용</li>
+            </ul>
+          </div>
 
-              <div class="project__activity">
-                <label aria-label="프론트엔드 엔지니어 활동 내역">
-                  What I Do / Frontend Engineer
-                </label>
-                <ul>
-                  <li tabindex="0">프로젝트 내 온보딩, 메인, 마이 페이지 등 기본 서비스 페이지 구현</li>
-                  <li tabindex="0">Redux의 잦은 BolierPlate 코드들을 정리하고, Axios의 instance를 이용해 thunk를 고치지 않는 방향으로 리팩토링 진행</li>
-                  <li tabindex="0">갱신되지 않는 instance 객체를 Axios의 intercepter를 활용해 클라-서버 간의 원활한 token 인증/인가 방식 구현</li>
-                  <li tabindex="0">AWS의 S3로 웹 페이지를 배포, CloudFront와 Route 53을 이용해 SSL 인증서를 받은 https 사이트 적용</li>
-                  <li tabindex="0">피드백 내용을 통해 제보된 75개의 버그들 중 72개의 버그 수정 및 처리 진행 (중복 제보, 수정 불가, 미이슈 사항 포함)</li>
-                  <li tabindex="0">전맹 사용자를 접근성을 고려해 시맨틱 태그와 alt, aria attribute를 배치하여 스크린 리더 읽기 기능 적용</li>
-                </ul>
-              </div>
-
-              <div class="project__activity__last">
-                <label aria-label="팀 리더 활동 내역">
-                  What I Do / Team Leader
-                </label>
-                <ul>
-                  <li tabindex="0">JIRA를 이용해 6주 일정을 스프린트로 분리, 팀원들에게 일감 배분 및 개발 사항 관리</li>
-                  <li tabindex="0">피드백으로 전달받은 버그들을 Github Project와 issues를 통해 리스트로 등록, 버그 트래킹을 진행</li>
-                  <li tabindex="0">이슈 모니터링 시스템인 Sentry를 배치해 심리 테스트 페이지 공유 기능 사용 중 일부 브라우저에서 WEB Share API를 사용하지 못하는 문제를
-                    발견하고, 특정 플랫폼에선 ClipBoard API를 적용해 공유 문제를 해결</li>
-                </ul>
-              </div>
-            </div>
+          <div class="project__activity__last">
+            <label aria-label="팀 리더 활동 내역">
+              What I Do / Team Leader
+            </label>
+            <ul>
+              <li tabindex="0">JIRA를 이용해 6주 일정을 스프린트로 분리, 팀원들에게 일감 배분 및 개발 사항 관리</li>
+              <li tabindex="0">피드백으로 전달받은 버그들을 Github Project와 issues를 통해 리스트로 등록, 버그 트래킹을 진행</li>
+              <li tabindex="0">이슈 모니터링 시스템인 Sentry를 배치해 브라우저에서 WEB Share API를 사용하지 못하는 문제를
+                발견, 특정 플랫폼에선 ClipBoard API를 적용해 공유 문제를 해결</li>
+            </ul>
           </div>
         </div>
       </div>
+    </div>
+  </div>
 
-      <div class="border__width"></div>
+  <div class="border__width"></div>
 
-      <div role="contentinfo" class="education">
-        <h3 tabindex="0" aria-label="프로젝트">
-          Education
-        </h3>
-        <h4>
-          동서울대학교
-        </h4>
-        <p>게임콘텐츠과<br>2012년 3월 ~ 2017년 2월 (졸업)</p>
-        <h4>
-          스파르타 코딩 클럽 부트캠프: 항해 99
-        </h4>
-        <p>8기 프론트엔드 React 과정<br>2022년 7월 4일 ~ 2022년 10월 14일 (수료)</p>
-      </div>
-    </section>
+  <div role="contentinfo" class="education">
+    <h3 tabindex="0" aria-label="프로젝트">
+      Education
+    </h3>
+    <h4>
+      동서울대학교
+    </h4>
+    <p>게임콘텐츠과<br>2012년 3월 ~ 2017년 2월 (졸업)</p>
+    <h4>
+      스파르타 코딩 클럽 부트캠프: 항해 99
+    </h4>
+    <p>8기 프론트엔드 React 과정<br>2022년 7월 4일 ~ 2022년 10월 14일 (수료)</p>
+  </div>
+  </section>
 
-    <footer class="footer" role="contentinfo">
+  <footer class="footer" role="contentinfo">
 
-    </footer>
+  </footer>
   </div>
 </body>
 

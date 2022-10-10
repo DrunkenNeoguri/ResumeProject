@@ -176,6 +176,12 @@ div[role="contentinfo"] {
 
 /* education */
 
+.education {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
 .education p {
   line-height: 1.3;
   margin-bottom: 1.5rem;

@@ -189,3 +189,34 @@ div[role="contentinfo"] {
     margin-bottom: 1.5rem;
   }
 }
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  html {
+    font-size: 12px;
+  }
+  body {
+    margin: auto 4rem;
+  }
+  .rowbox {
+    flex-direction: row;
+  }
+  .rowbox__name {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+  .rowbox__context__stack {
+    margin: 1rem 0 3rem 0 !important;
+  }
+  .project ul {
+    margin-bottom: 3rem;
+  }
+  p,
+  li {
+    font-size: 1.3rem;
+  }
+}

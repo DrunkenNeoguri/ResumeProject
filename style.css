@@ -100,6 +100,12 @@ div[role="contentinfo"] {
   gap: 3rem;
 }
 
+.contect__container {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
+
 .contect__image {
   display: flex;
   justify-content: center;
@@ -234,8 +240,25 @@ div[role="contentinfo"] {
   html {
     font-size: 12px;
   }
+  .contect__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
   .rowbox__name {
     margin-bottom: 1.5rem;
+  }
+  .project {
+    margin-bottom: 0 !important;
+  }
+  .project__box__projectName {
+    margin: 0.5rem 0;
+  }
+  .project__activity__last {
+    margin-bottom: 0;
+  }
+  .education p {
+    margin-bottom: 2rem;
   }
 }
 
